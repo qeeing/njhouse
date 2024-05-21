@@ -34,7 +34,7 @@ if response.status_code == 200:
 		
 		excel_path = '南京二手房住宅成交数据.xlsx'
 		try:
-			# 非首次追加和覆盖sheet表内容
+			# 非首次追加和覆盖sheet内容
 			data = load_workbook(excel_path)
 			with pd.ExcelWriter(excel_path, mode='a',
 			if_sheet_exists='replace') as writer:
