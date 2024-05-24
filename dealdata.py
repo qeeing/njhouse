@@ -43,7 +43,7 @@ if response.status_code == 200:
 			# 首次创建
 			df.to_excel(excel_path, sheet_name=sheet_name)
 else:
-	print("获取网络数据出错了")
+	print("获取网络数据出错了！")
 	
 	
 	
